@@ -1,0 +1,19 @@
+.terraform/
+
+# Terraform state files (contain sensitive information)
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.*
+*.lock.hcl
+backend-config.hcl
+
+*.tfvars
+
+# Crash log files
+crash.log
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
