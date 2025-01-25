@@ -6,5 +6,6 @@ provider "azurerm" {
 }
 
 terraform {
-  backend "azurerm" {}
+  backend "azurerm" {
+  }
 }
