@@ -17,7 +17,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./terraform
+
     steps:
+      - run: echo "az login"
+      - run: echo "setup azurerm backend"
+      - run: echo "setup TF vars"
       - uses: actions/checkout@v3
       - uses: hashicorp/setup-terraform@v2
       - run: terraform init
