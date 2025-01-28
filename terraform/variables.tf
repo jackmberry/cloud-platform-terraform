@@ -15,22 +15,7 @@ variable "resource_group_name" {
   type        = string
 }
 
-variable "storage_account_name" {
-  description = "Name of the Azure Storage Account for storing Terraform state"
+variable "aks_cluster_name" {
+  description = "Name for the AKS cluster"
   type        = string
-}
-
-variable "container_name" {
-  description = "Name of the blob container for Terraform state"
-  type        = string
-}
-
-variable "container_registry_name" {
-  description = "Name of the environments container registry"
-  type = string
-}
-
-variable "key_vault_name" {
-  description = "Name of the KeyVault to create for the environment"
-  type = string
 }
